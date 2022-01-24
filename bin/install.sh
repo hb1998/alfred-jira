@@ -52,9 +52,6 @@ done
 link="$path/_jira"
 if [[ -L "$link" ]]; then
   echo "Workflow already installed at \"$link\"." 
-  echo "Re-install? Y/n"
-  read res
-  [[ "$res" != "Y" ]] && exit 0
   rm "$link"
 fi 
 
